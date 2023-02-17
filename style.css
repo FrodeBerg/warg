@@ -1,0 +1,92 @@
+:root {
+    --rustyMetal: #76351A;
+    --fakeRusty: #B74710E;
+    --shadowBlack: #222222;
+    --porche: #F6F1DE;
+    --white: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    font-family: "Rival", sans-serif;
+}
+
+.header {
+    background-color: var(--rustyMetal);
+    padding: 5px;
+}
+
+.header * {
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.subHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: var(--white);
+}
+
+.left h3 {
+    font-family: Garamond Premier Pro;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+a {
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.titlePage {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headerImage {
+    position: absolute;
+    height: 1109px;
+    width: 1906px;
+    left: -1px;
+    top: 4px;
+    border-radius: 0px;
+    z-index: -1;
+}
+
+.titleContainer {
+    margin-left: 72px;
+}
+
+.titleContainer h1 {
+    font-family: Garamond Premier Pro;
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--white); 
+    margin: 0; 
+      
+}   
