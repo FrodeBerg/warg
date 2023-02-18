@@ -1,92 +1,150 @@
 :root {
     --rustyMetal: #76351A;
-    --fakeRusty: #B74710E;
+    --fakeRusty: #B7410E;
     --shadowBlack: #222222;
     --porche: #F6F1DE;
     --white: #FFFFFF;
 }
 
-body {
-    margin: 0;
-    font-family: "Rival", sans-serif;
-}
-
-.header {
-    background-color: var(--rustyMetal);
-    padding: 5px;
-}
-
-.header * {
-    color: white;
-    margin: 0;
-    text-align: center;
-}
-
-.subHeader {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.left,
-.right {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    color: var(--white);
-}
-
-.left h3 {
-    font-family: Garamond Premier Pro;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 38px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
 a {
-    font-family: Arial;
+    text-decoration: none;
+}
+
+.heading {
+    font-family: EB Garamond;
+    font-size: 75px;
+    font-weight: 400;
+    color: var(--white);
+    margin: 0;
+}
+
+.subHeading,
+.flex a {
+    font-family: Rival Sans;
     font-size: 15px;
     font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-decoration: none;
     color: var(--white);
 }
 
-.titlePage {
-    height: 95vh;
+.standard {
+    font-family: Rival Sans;
+    font-size: 11px;
+    font-weight: 300;
+    color: var(--white);
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: "Rival", sans-serif;
+    overflow-x: hidden;
+}
+
+.page {
+    height: 80vh;
+    width: 100vw;
+}
+
+.flex {
     display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.start {
+    align-items: start;
+}
+
+.space {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.vertical {
     flex-direction: column;
     justify-content: space-between;
 }
 
-.headerImage {
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background-color: var(--rustyMetal);
+    margin: 0;
+}
+
+.header p {
+    font-size: 12px;
+    margin: 5px;
+}
+
+.left, 
+.right {
+    margin: 45px;
+    margin-top: 15px;
+}
+
+.left .heading {
+    font-size: 32px;
+}
+
+.frontImage {
     position: absolute;
-    height: 1109px;
-    width: 1906px;
+    height: auto;
+    width: auto;
     left: -1px;
     top: 4px;
-    border-radius: 0px;
     z-index: -1;
 }
 
-.titleContainer {
-    margin-left: 72px;
+.front {
+    height: 1109px;
 }
 
-.titleContainer h1 {
-    font-family: Garamond Premier Pro;
-    font-size: 75px;
-    font-weight: 400;
-    line-height: 90px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: var(--white); 
-    margin: 0; 
-      
+.frontTitle {
+    margin-left: 70px;
+    margin-bottom: 130px;
+}
+
+.frontTitle a {
+    font-size: 24px;
+}
+
+.productPage {
+    margin: 140px;
+    height: 70vh;
+    width: 100%;
+}
+
+.productPage h3{
+    color: var(--shadowBlack);
+    font-size: 42px;
+    margin-bottom: 35px;
+}
+
+.productPage a {
+    color:#747474;
+    size: 14px;
+}
+
+.description {
+    font-size: 11px;
+    color: #707070;
+}
+
+.taste {
+    font-size: 14px;
+    color: var(--fakeRusty);
+}
+
+.weight {
+    font-size: 11px;
+    color: var(--shadowBlack);
 }   
+
+.price {
+    font-size: 14px;
+    color: var(--shadowBlack);
+}
