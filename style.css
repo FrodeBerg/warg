@@ -15,7 +15,7 @@ p {
 }
 
 .heading {
-    font-family: EB Garamond;
+    font-family: Garamond Premier Pro;
     font-size: 75px;
     font-weight: 400;
     color: var(--white);
@@ -318,4 +318,62 @@ h6 {
 
 .wrap {
     flex-wrap: wrap;
+}
+
+.boretti {
+    position: relative;
+}
+
+.boretti h3,
+.boretti h5 {
+    position: absolute;
+    top: 0;
+    margin: 40px;
+    font-size: 42px;
+}
+
+.boretti h5 {
+    border: solid 1px var(--white);
+    letter-spacing: 0.2em;
+    top: 70px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.more {
+    margin: 60px;
+    margin-top: 150px;
+}
+
+.more > * {
+    flex: 1;
+}
+
+.more h3 {
+    font-size: 63px;
+    color: var(--shadowBlack);
+}
+
+.more h5 {
+    font-style: italic;
+    color: var(--shadowBlack);
+    font-size: 22px;
+}
+
+.more h6 {
+    letter-spacing: normal;
+    font-size: 12px;
+    color: var(--shadowBlack);
+}
+
+.more p {
+    color: #545454;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.more a {
+    font-style: italic;
+    color: var(--shadowBlack);
+    font-size: 20px;
 }
